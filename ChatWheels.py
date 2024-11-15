@@ -53,7 +53,7 @@ db = SQLDatabase.from_uri("sqlite:///my.db")
 toolkit = SQLDatabaseToolkit(db=db, llm=llm)
 
 
-vector_store = Chroma(embedding_function=embeddings, persist_directory=r"C:\Users\asus\Desktop\Genai\RAG_AWS_BEDROCK\chroma_store_new_final") 
+vector_store = Chroma(embedding_function=embeddings, persist_directory="chroma_store_new_final") 
 
 pdf_retriever = vector_store.as_retriever()
 
